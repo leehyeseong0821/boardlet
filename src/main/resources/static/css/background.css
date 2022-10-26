@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box; 
+}
+html,body{
+    height: 100%;
+    width: 100%; 
+    margin:0;  
+}
+#container{
+height: 100%;
+width: 100%;
+}
+.top-bar{
+    height: 70px; 
+    background-color: rgb(81, 76, 76);
+    word-spacing: 40px;
+    line-height: 400%; 
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-weight:bolder;
+}
+.bottom-bar{
+   height:100%;
+   width: 100%;
+   background-color:white
+}
+form{
+    display:inline;
+}
+

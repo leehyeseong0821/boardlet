@@ -2,18 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>게시판 만들기</title>
-    <link rel="stylesheet" href="/css/boardwrite.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"href="/css/background.css">
+    <link rel="stylesheet"href="/css/boardwrite.css">
 </head>
-
-<body>
-    <div class="layout">
-        <form action="/board/writepro" method="post">
-        <input class="layout-top"type="text"name="title">
-        <textarea class="layout-bottom" name="content"> </textarea>
-        <button type="submit">작성</button>
-        </form>
+<body>  
+        <div id="main">
+            <div class="top-bar">
+                <a class="top-tag"href="#">메인</a>
+                <a class="top-tag"href="#">로그인</a>
+                <a class="top-tag"href="#">회원가입</a>
+                <a class="top-tag"href="#">게시판</a>
     </div>
-
+        </div>
+        <form action="/board/writepro" method="post">
+        <div class="bottom-bar">  
+            <table class="table-main">
+                <h2>게시글을 작성해주세요</h2>
+            <tbody>
+                <tr>
+                <th class="write"scope="row">이름 </th>
+                <td> 
+                <input name ="name"class="text-input" type="text"placeholder=" 이름을 입력하세요." required>
+                </td>
+                </tr>
+                <tr>
+                <th class="write"scope="row">제목</th>
+                <td>
+                <input name ="title"class="text-input" type="text"placeholder=" 제목을 입력하세요." required>
+                </td>
+                </tr>
+                <tr>
+                <th class="write"scope="row">내용</th>
+                <td><textarea name ="content"class="text-text"placeholder=" 내용을 입력하세요." required></textarea>
+                </td>
+                </tr>
+                </table>
+                <button class="btn-a" type="submit">작성</button>
+        </form>
+        </div>
+        </div>
+      
+    
 </body>
 </html>
