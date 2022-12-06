@@ -6,17 +6,10 @@
     
 }
 .text-text{
-    width: 500px;
+    width: 1000px;
     height: 500px;
-    border-radius: 10px;  
-    margin-bottom: 15px; 
-}
-.btn-a{
-    color: white;
-    background-color: black;
-    width: 70px;
-    height: 50px;
-    cursor: pointer;
+    resize: none;
+    overflow-y: auto;
 }
 .table-main{
     border: 1px solid #eee;
@@ -37,7 +30,6 @@ th{
     text-align: left;
     font-weight: normal;
     background-color: #fbfafa;
-  
 }
 .text-input{
     width: 100%;
@@ -56,6 +48,19 @@ th{
 .write{
     font-size: 12px;
 }
-.btn-a{
-    margin-top: 20px;
+
+.board-title, .board-name{
+    width: 90%;
+    height: 50px;
 }
+
+.board-content{
+    width: 1000px;
+    height: 500px;
+    vertical-align: top
+}
+
+.bottom-bar{
+    margin-top:90px;
+}
+

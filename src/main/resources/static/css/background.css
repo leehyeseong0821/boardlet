@@ -2,7 +2,6 @@
     box-sizing: border-box; 
 }
 html,body{
-    height: 100%;
     width: 100%; 
     margin:0;  
 }
@@ -16,7 +15,7 @@ width: 100%;
     word-spacing: 40px;
     line-height: 400%; 
 }
-a{
+p{
     color: white;
     text-decoration: none;
     font-weight:bolder;
@@ -29,4 +28,8 @@ a{
 form{
     display:inline;
 }
-
+.top-tag{
+    display: inline;
+    position: relative;
+    cursor: pointer;
+}

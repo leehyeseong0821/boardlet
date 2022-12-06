@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"href="/css/background.css">
+    <link rel="stylesheet"href="/css/boardview.css">
+   
+</head>
+<body>  
+        <div id="container">
+            <div class="top-bar">
+                <p class="top-tag">메인</p>
+                <p class="top-tag">로그인</p>
+                <p class="top-tag">회원가입</p>
+                <p class="top-tag">게시판</p>
+            </div>
+            <div class="bottom-bar">  
+                <table class="table-main">
+                    <tbody class="tbody-main">
+                        <tr>
+                            <th class="write"scope="row">이름</th>
+                            <td th:text="${board.name}" class="board-name">
+                            </td>
+                        
+                        </tr>
+                        <tr>
+                            <th class="write"scope="row">제목</th>
+                            <td th:text="${board.title}" class="board-title">
+                            </td>
+                           
+                        </tr>
+                        <tr>
+                            <th class="write"scope="row">내용</th>
+                            <td th:text="${board.content}" class="board-content">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+    </div>
+        
+      
+    
+</body>
+</html>
