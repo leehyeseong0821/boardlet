@@ -63,4 +63,15 @@ th{
 .bottom-bar{
     margin-top:90px;
 }
-
+.button-board{
+    margin-top: 30px;
+    color: white;
+    background-color: black;
+   
+  }
+ .board-button{
+    text-decoration: none;
+    text-decoration-line: none;
+    color: white;
+ }
+  

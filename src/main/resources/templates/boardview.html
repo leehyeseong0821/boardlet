@@ -39,6 +39,14 @@
                         </tr>
                     </tbody>
                 </table>
+                <div>
+                <button class="button-board" type="button">
+                <a class="board-button" th:href="@{/board/delete(id=${board.id})}">삭제</a>
+                </button>
+                <button class="button-board" type="button">
+                <a class="board-button" th:href="@{/board/modify/{id}(id=${board.id})}">수정</a>
+                </button>
+            </div>
         </div>
     </div>
         
