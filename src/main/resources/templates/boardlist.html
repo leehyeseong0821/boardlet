@@ -11,10 +11,10 @@
 <body>  
         <div id="container">
             <div class="top-bar">
-                <p class="top-tag">메인</p>
-                <p class="top-tag">로그인</p>
-                <p class="top-tag">회원가입</p>
-                <p class="top-tag">게시판</p>
+                <p class="top-tag main">메인</p>
+                <p class="top-tag login">로그인</p>
+                <p class="top-tag sign">회원가입</p>
+                <p class="top-tag board">게시판</p>
             </div>
             <div class="main-container">
              <div class="post">
@@ -24,7 +24,7 @@
                  </ul>
                  <table class="board_list">
                      <thead>
-                     <tr>
+                     <tr class="top">
                          <th>번호</th>
                          <th>이름</th>
                          <th>제목</th>
@@ -33,9 +33,9 @@
                      </thead>
                          <tbody>
                          <tr th:each="board : ${list}">
-                             <td th:text="${board.id}"></td>
-                             <td th:text="${board.name}"></td>
-                             <td th:text="${board.title}"></td>
+                             <td th:text="${board.id}">d</td>
+                             <td th:text="${board.name}">d</td>
+                             <td th:text="${board.title}">d</td>
                              <td class="aboard">
                                  <a th:text="${board.content}" th:href="@{/board/view(id=${board.id})}">dd</a>
                              </td>
@@ -48,13 +48,17 @@
                                 <a class="bpage2" th:if="${page == nowPage}" th:text="${page}"></a>
                             </th:block>
                         </div>
+                        <button class="button-board" type="button">글쓰기</button>
                  <form th:action="@{/board/list}" method="get">
+                    <div class="search-name">
                      <input type="text" name="searchKeyword">
-                     <button type="submit">검색</button>
+                     <button class="button-boarda"type="submit">검색</button>
+                    </div>
                  </form>
                         
     </div>
-        
+    <script src="/js/background.js"></script>
+    <script src="/js/button.js"></script>
       
     
 </body>

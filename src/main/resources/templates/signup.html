@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"href="/css/background.css">
+    <link rel="stylesheet"href="/css/backgwrite.css">
+    <link rel="stylesheet"href="/css/sign.css">
+</head>
+<body>  
+        <div id="container">
+            <div class="top-bar">
+                <p class="top-tag main">메인</p>
+                <p class="top-tag login">로그인</p>
+                <p class="top-tag sign">회원가입</p>
+                <p class="top-tag board">게시판</p>
+            </div>
+            <div class="login">
+                <div class="account-container">
+                    <section class="account-current">
+                        <h2 class="account-subtitle">신규 회원가입</h2>
+                        <div class="errors errors-invisible">
+                            <ul class="error-msgs">
+      
+                            </ul>
+                        </div>
+                        <div class="account-name">
+                            <div class="account-name-half">
+                                <input type="text" name ="name"class="account-input" placeholder="이름" required>
+                            </div>
+                        </div>
+                        <input type="text" name="id" class="account-input" placeholder="아이디" required>
+                        <input type="text" name="password" class="account-input" placeholder="비밀번호" required>
+                        <input type="text" name="email" class="account-input" placeholder="이메일" required>
+                        <button type="submit" class="account-button">가입 완료</button>
+                        <a class="login-return-link" href="/board/login">로그인으로 돌아가기</a>
+                    </section>
+                </div>
+            </div>   
+    </div>
+<script src="/js/background.js"></script>
+      
+    
+</body>
+</html>

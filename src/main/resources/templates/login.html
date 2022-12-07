@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"href="/css/background.css">
+    <link rel="stylesheet"href="/css/backgwrite.css">
+    <link rel="stylesheet"href="/css/login.css">
+</head>
+<body>  
+        <div id="container">
+            <div class="top-bar">
+                <p class="top-tag main">메인</p>
+                <p class="top-tag login">로그인</p>
+                <p class="top-tag sign">회원가입</p>
+                <p class="top-tag board">게시판</p>
+            </div>
+            <div class="login">
+                <h1 class="account-title">로그인</h1>
+                <div class="account-container">
+                  <section class="account-current">
+                    <form action="/login" method="post">
+                      <h2 class="account-subtitle">MEMBER LOGIN</h2>
+                      <input type="email" class="account-input" name="email" placeholder="이메일" required>
+                      <input type="password" class="account-input" name="password" placeholder="비밀번호" required>
+                      <button type="submit" class="account-button">로그인</button>
+                      <button type="button" class="account-button signup">회원가입</button>
+                    <a class="find-password-link" href="">비밀번호를 잊으셨나요?</a>
+                  </section>
+                </div>
+              </div>
+    </div>
+<script src="/js/background.js"></script>
+<script src="/js/button.js"></script>
+      
+    
+</body>
+</html>
